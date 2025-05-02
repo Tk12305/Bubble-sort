@@ -1,4 +1,4 @@
-def bubble_sort(arr):
+def bubble_sort(arr):  # Function to perform bubble sort
     n = len(arr)
     for i in range(n):
         swapped = False
@@ -12,7 +12,7 @@ def bubble_sort(arr):
     return arr
 
 # Example 
-my_list = [5, 3, 8, 4, 2]
+my_list = [2, 3, 8, 5, 2]
 sorted_list = bubble_sort(my_list)
 print("Sorted list:", sorted_list)
 
