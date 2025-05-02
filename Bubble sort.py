@@ -2,10 +2,10 @@ def bubble_sort(arr):  # Function to perform bubble sort
     n = len(arr)
     for i in range(n):
         swapped = False
-        for j in range(0, n - i - 1):
-            if arr[j] > arr[j + 1]:
+        for j in range(0, n - i - 3):
+            if arr[j] > arr[j + 3]:
                 # Swap elements
-                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+                arr[j], arr[j - 3] = arr[j - 3], arr[j]
                 swapped = True
         if not swapped:
             break
